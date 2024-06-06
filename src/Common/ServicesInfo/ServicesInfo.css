@@ -1,0 +1,156 @@
+/* Updated CSS for services-content */
+.services-content {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  
+}
+
+.services-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.services-content p {
+  margin-bottom: 0px;
+}
+
+/* Custom hover effect */
+.services-content:hover {
+  transform: translateY(-5px);
+  background-color:var(--cardBGy);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional styling for the shadow effect on the second section */
+.shadow {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Updated CSS for services-info section */
+#services-info .icon-boxes {
+  margin-top: 100px;
+}
+
+#services-info .icon-box {
+  margin-bottom: 1.5rem;
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  background: var(--primary);
+  box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+#services-info .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+#services-info .icon-box .title a {
+  color: black;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+#services-info .icon-box .description {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+}
+
+#services-info .icon-box .icon {
+  position: absolute;
+  text-align: center;
+  z-index: -2;
+  bottom: -10%;
+  right: 20%;
+  transform: translateX(50%);
+  transition: all 0.3s ease-in-out;
+  font-size: 10rem;
+  opacity: 0.4;
+  color: var(--secondary);
+}
+
+#services-info .icon-box:hover {
+  background-color: var(--cardBGy);
+}
+
+#services-info .icon-box:hover .icon {
+  color: green;
+}
+
+#services-info .icon-box:hover .description {
+  font-weight: 500;
+}
+
+#services-info .icon-box:hover .title a {
+  color: var(--secondary);
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-height: 800px) {
+  #hero {
+    height: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  #hero {
+    height: auto;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+
+/* Styles for devices up to 576px wide (extra small devices like phones) */
+@media (max-width: 576px) {
+  .services-content {
+    text-align: left;
+     width: auto;
+    margin-bottom: 10px;
+  }
+}
+
+/* Styles for devices between 577px and 768px wide (small devices like tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Your CSS styles for small devices here */
+}
+
+/* Styles for devices between 769px and 992px wide (medium devices like laptops) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Your CSS styles for medium devices here */
+}
+
+/* Styles for devices between 993px and 1200px wide (large devices like desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Your CSS styles for large devices here */
+}
+
+/* Styles for devices wider than 1200px (extra large devices like large desktops) */
+@media (min-width: 1201px) {
+  /* Your CSS styles for extra large devices here */
+}

@@ -1,0 +1,33 @@
+
+
+
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+    padding: 60px 0;
+  }
+  
+  .counts .count-box {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .counts .count-box span {
+    font-size: 48px;
+    line-height: 48px;
+    display: block;
+    font-weight: 700;
+    color: var(--Tertiary);
+    margin-left: 80px;
+    margin: auto;
+  }
+  
+  .counts .count-box p {
+    padding: 8px 0 0 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--secondary);
+  }
+  

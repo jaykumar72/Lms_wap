@@ -1,0 +1,181 @@
+:root {
+  /* 60% use the foundation of the color   used as the background of the design*/
+  --primary: var(--bs-white);
+  /* 30%  color can be used for typography, icons, and subheadings/subtitles in a design*/
+  --secondary: var(--bs-indigo);
+  /* 10% used for buttons call-to-action elements */
+  --Tertiary: var(--bs-yellow);
+  /* extra color */
+  --primary2: var(--bs-gray-200);
+  --cardBGi: rgba(76, 0, 130, 0.280);
+  --cardBGy: rgba(255, 255, 0, 0.280);
+  --text-color-important: #7f2904;
+  --text-color-secondary-important: #02182d;
+  --text-color-: #000000;
+
+}
+
+body {
+  margin: 0;
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+@font-face {
+  font-family: 'AlexBrush';
+  src: url('../public/assets/fonts/AlexBrush-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Courgette';
+  src: url('../public/assets/fonts/Courgette-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'KaushanScript';
+  src: url('../public/assets/fonts/KaushanScript-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lugrasimo';
+  src: url('../public/assets/fonts/Lugrasimo-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'PoetsenOne';
+  src: url('../public/assets/fonts/PoetsenOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'SedanSC';
+  src: url('../public/assets/fonts/SedanSC-Regular.ttf');
+}
+
+h1 {
+  font-family: "SedanSC";
+}
+h2{
+  font-family: "PoetsenOne";
+
+}
+h3{
+  font-family: "Courgette";
+
+}
+h4, h5, h6{
+  font-family:'Lugrasimo';
+  font-weight: 900;
+  font-style: normal;
+}
+p {
+  font-family: 'PoetsenOne';
+  font-weight: 400;
+  font-style: normal;
+}
+
+.top-fixed{
+  background-color: bisque;
+  transition: 0.3s;
+  top:20px;
+  position: fixed; 
+  z-index: 99;
+
+}
+.top-menu{
+  justify-content: center;
+
+}
+.navbar-top {
+  flex-wrap: nowrap;
+  justify-content: center !important;
+}
+.container {
+  overflow: hidden; /* or overflow: auto; */
+}
+
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #2487ce;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #2487ce;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #3e9bdd;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.drop-cap:first-child::first-letter{
+  color:var(--Tertiary);
+  font-weight: bold;
+  font-size: 70px;
+  float: left;
+  line-height: 60px;
+  padding-right: 8px;
+  margin-top: -3px;
+}

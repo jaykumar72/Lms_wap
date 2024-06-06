@@ -1,0 +1,25 @@
+
+/* Styles for devices up to 576px wide (extra small devices like phones) */
+@media (max-width: 576px) {
+  /* Your CSS styles for extra small devices here */
+}
+
+/* Styles for devices between 577px and 768px wide (small devices like tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Your CSS styles for small devices here */
+}
+
+/* Styles for devices between 769px and 992px wide (medium devices like laptops) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Your CSS styles for medium devices here */
+}
+
+/* Styles for devices between 993px and 1200px wide (large devices like desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Your CSS styles for large devices here */
+}
+
+/* Styles for devices wider than 1200px (extra large devices like large desktops) */
+@media (min-width: 1201px) {
+  /* Your CSS styles for extra large devices here */
+}

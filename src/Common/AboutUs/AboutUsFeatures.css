@@ -1,0 +1,117 @@
+
+#list-example {
+  position: sticky;
+  top: 55vh;
+  z-index: 1;
+}
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  height: 100%; /* Ensure the list takes full height */
+  position: relative;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center; /* Center content horizontally */
+  margin-left: 2px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  border: 5px;
+  transition: background-color 0.3s;
+  color: #555; /* Medium text color */
+}
+
+.list-group-item.active, /* Existing active class */
+.list-group-item.tablink.w3-red { /* New active class for your logic */
+  background-color: #211d0e; /* Change to red or any desired color */
+  color: #fff; /* Change to desired text color */
+}
+
+.about-us-features-container {
+  margin-top: 10vh;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.content-wrap{
+  margin-top: 10rem;
+}
+
+/* Heading */
+.about-us-features-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark text color */
+}
+
+
+.about-us-features-container .list-group-item {
+  margin-left: 2px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  border: 5px;
+  transition: background-color 0.3s;
+  color: #555; /* Medium text color */
+}
+.list-icon{
+  margin-right: 6px;
+}
+
+.about-us-features-container .list-group-item:hover,
+.about-us-features-container .list-group-item.active {
+  background-color: #fbcd04; 
+  color: #fff; 
+}
+
+
+.about-us-features-container .sticky-top {
+  position: sticky;
+  top: 26vh;
+  z-index: 1020;
+}
+
+/* Scrollable navigation list */
+.about-us-features-container .list-group {
+  height: calc(100vh - 40px);
+
+}
+
+/* Content section */
+.about-us-features-container .content-section {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f8f9fa; 
+}
+
+.about-us-features-container .scrollspy-example h4 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #235c94; /* Adjusted heading color */
+  font-size: 40px;
+  text-align: center;
+  
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-us-features-container .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us-features-container .list-group {
+    margin-bottom: 20px;
+    display: none; /* Hide left div on small screens */
+  }
+
+  /* Show left div when in small screens and content section is active */
+  .about-us-features-container .list-group.active {
+    display: block;
+  }
+}
